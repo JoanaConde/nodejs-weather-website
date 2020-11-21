@@ -23,7 +23,7 @@ weatherForm.addEventListener('submit', (event) => {
     messageTwo.textContent = ''
 
     //fetch api is not part of javascript, it is a browser based API
-    fetch('http://localhost:3000/weather?address=' + encodeURIComponent(location)).then( (response) => {
+    fetch('/weather?address=' + encodeURIComponent(location)).then( (response) => {
         // data is the json that is sent from the server side
         /**
          * data = {
